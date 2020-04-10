@@ -22,6 +22,9 @@ public class Sorted {
         List<Integer> naturalSortingOrder = marks.stream().sorted((i1,i2)->i1.compareTo(i2)).collect(Collectors.toList());
         System.out.println("naturalSortingOrder:"+naturalSortingOrder);
 
+        /**
+         * This is a descending order
+         */
         List<Integer> reverseOfNaturalSortingOrder = marks.stream().sorted((i1,i2)->-i1.compareTo(i2)).collect(Collectors.toList());
         System.out.println("reverseOfNaturalSortingOrder:"+reverseOfNaturalSortingOrder);
 
